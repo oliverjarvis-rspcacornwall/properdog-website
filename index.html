@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Proper Dog Cornwall - Professional dog training and grooming services in Cornwall. Supporting RSPCA Cornwall.">
     <title>Proper Dog Cornwall | Dog Training & Grooming</title>
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Proper Dog Cornwall | Dog Training & Grooming">
+    <meta property="og:description" content="Professional dog training and grooming services in Cornwall. Every penny supports RSPCA Cornwall's rescue work.">
+    <meta property="og:image" content="images/proper-dog-cornwall-teal-tagline.png">
+    <meta property="og:url" content="https://properdog.rspcacornwall.org.uk">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/proper-dog-cornwall-navy.png">
+    <link rel="apple-touch-icon" href="images/proper-dog-cornwall-navy.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -54,6 +67,30 @@
         </div>
     </header>
 
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    Positive, Force-Free Methods
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
+                    Experienced Trainers
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+                    Supports Rescue Animals
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                    St Columb, Cornwall
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Services Overview -->
     <section id="services" class="services">
         <div class="container">
@@ -102,8 +139,15 @@
     <section id="training" class="bg-light">
         <div class="container">
             <div class="section-header">
+                <span class="section-label">Expert Dog Training</span>
                 <h2>Our Training Classes</h2>
                 <p>Build a stronger bond with your dog through our expert-led, positive reinforcement training classes.</p>
+            </div>
+
+            <!-- RSPCA Adoptee Banner -->
+            <div class="adoptee-banner">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="2" style="width: 24px; height: 24px; stroke: currentColor;"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+                <span><strong>Adopted from RSPCA Cornwall?</strong> Puppy Pre-School is FREE for you!</span>
             </div>
 
             <div class="grid grid-3">
@@ -168,7 +212,7 @@
     </section>
 
     <!-- Why Choose Us -->
-    <section id="about">
+    <section id="about" class="bg-cream">
         <div class="container">
             <div class="split-content">
                 <div>
@@ -211,10 +255,26 @@
     </section>
 
     <!-- Impact Section -->
-    <section class="bg-navy text-center">
+    <section class="bg-navy text-center impact-section">
         <div class="container">
+            <span class="section-label" style="color: var(--pdc-light-blue);">Making a Difference</span>
             <h2>Training With a Purpose</h2>
-            <p style="max-width: 700px; margin: 0 auto;">When you train with us, you're doing more than helping your own dog. Every pound from our classes directly funds our rescue and rehoming work, providing food, shelter, and care for Cornwall's most vulnerable animals.</p>
+            <p style="max-width: 700px; margin: 0 auto 2rem;">When you train with us, you're doing more than helping your own dog. Every pound from our classes directly funds our rescue and rehoming work, providing food, shelter, and care for Cornwall's most vulnerable animals.</p>
+
+            <div class="impact-stats">
+                <div class="impact-stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Profits to charity</span>
+                </div>
+                <div class="impact-stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Years of experience</span>
+                </div>
+                <div class="impact-stat">
+                    <span class="stat-number">1000s</span>
+                    <span class="stat-label">Dogs helped</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -323,8 +383,17 @@
 
                 <div class="footer-charity">
                     <h4>Supporting</h4>
-                    <p>RSPCA Cornwall Branch<br>Registered Charity</p>
+                    <p>RSPCA Cornwall Branch<br>Registered Charity No. 1074655</p>
                     <p class="footer-note">All proceeds support animal welfare in Cornwall.</p>
+
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/RSPCACornwall" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/rspcacornwall" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 

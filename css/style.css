@@ -23,6 +23,7 @@
     --off-white: #F8F9FA;
     --light-grey: #E9ECEF;
     --bg-light: #f8fafb;
+    --warm-cream: #F5F0E8;
     --text-dark: #333333;
     --text-body: #4a4a4a;
     --text-light: #5a5a5a;
@@ -539,6 +540,24 @@ section {
 
 .bg-teal p {
     color: rgba(255, 255, 255, 0.95);
+}
+
+.bg-cream {
+    background-color: var(--warm-cream);
+}
+
+.bg-cream h2, .bg-cream h3 {
+    color: var(--pdc-navy);
+}
+
+/* Gold/Brown Accent from brand guidelines */
+.accent-gold {
+    color: var(--pdc-brown);
+}
+
+.badge-gold {
+    background: var(--pdc-brown);
+    color: var(--pdc-navy);
 }
 
 /* ============================================
@@ -1088,6 +1107,96 @@ section {
 }
 
 /* ============================================
+   ADOPTEE BANNER
+   ============================================ */
+.adoptee-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    color: #065f46;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-full);
+    margin-bottom: 2rem;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.95rem;
+    border: 1px solid rgba(6, 95, 70, 0.2);
+}
+
+.adoptee-banner svg {
+    flex-shrink: 0;
+    stroke: #065f46;
+}
+
+/* ============================================
+   IMPACT STATS
+   ============================================ */
+.impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.impact-stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--pdc-teal);
+    line-height: 1.2;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 0.25rem;
+}
+
+/* ============================================
+   FOOTER SOCIAL
+   ============================================ */
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.footer-social a:hover {
+    background: var(--pdc-teal);
+    transform: translateY(-3px);
+}
+
+.footer-social svg {
+    width: 20px;
+    height: 20px;
+    fill: rgba(255, 255, 255, 0.8);
+}
+
+.footer-social a:hover svg {
+    fill: var(--white);
+}
+
+/* ============================================
    UTILITIES
    ============================================ */
 .text-center { text-align: center; }
@@ -1229,5 +1338,20 @@ section {
     .btn {
         width: 100%;
         max-width: 280px;
+    }
+
+    .adoptee-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        border-radius: var(--radius-lg);
+    }
+
+    .impact-stats {
+        gap: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
     }
 }
