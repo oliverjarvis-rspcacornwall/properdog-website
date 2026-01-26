@@ -14,7 +14,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <span class="proper">Proper</span><span class="dog">Dog</span>
             </a>
             <button class="nav-toggle" aria-label="Toggle menu">
@@ -23,9 +23,15 @@
                 <span></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#training">Training</a></li>
-                <li><a href="#grooming">Grooming</a></li>
+                <li class="nav-item">
+                    <a href="#training">Training</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="puppy-preschool.html">Puppy Pre-School</a></li>
+                        <li><a href="canine-college.html">Canine College</a></li>
+                        <li><a href="1to1-training.html">1-to-1 Training</a></li>
+                    </ul>
+                </li>
+                <li><a href="grooming.html">Grooming</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact" class="btn btn-nav">Contact Us</a></li>
             </ul>
@@ -51,134 +57,110 @@
     <!-- Services Overview -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-intro">Quality dog care services where every penny supports animal welfare</p>
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Quality dog care services where every penny supports animal welfare</p>
+            </div>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.rspcacornwall.org.uk/wp-content/uploads/2022/06/dog-training-1.jpg"
+                             alt="Dog training at RSPCA Cornwall"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/2C3263/FFFFFF?text=Dog+Training';">
                     </div>
-                    <h3>Dog Training</h3>
-                    <p>From puppy foundations to advanced behaviour work, our experienced trainers use positive, reward-based methods.</p>
-                    <a href="#training" class="service-link">Learn more</a>
+                    <div class="card-content">
+                        <h3>Dog Training</h3>
+                        <p>From puppy foundations to advanced behaviour work, our experienced trainers use positive, reward-based methods to help you build a joyful partnership with your dog.</p>
+                        <a href="#training" class="card-link">
+                            Explore Training
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
-                            <line x1="9" y1="9" x2="9.01" y2="9"/>
-                            <line x1="15" y1="9" x2="15.01" y2="9"/>
-                        </svg>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.rspcacornwall.org.uk/wp-content/uploads/2024/03/Grooming-website-header.png"
+                             alt="Dog grooming at PAWS Grooming"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/2C3263/FFFFFF?text=Dog+Grooming';">
                     </div>
-                    <h3>Dog Grooming</h3>
-                    <p>Professional grooming services to keep your dog looking and feeling their best, from bath and brush to full grooms.</p>
-                    <a href="#grooming" class="service-link">Learn more</a>
+                    <div class="card-content">
+                        <h3>Dog Grooming</h3>
+                        <p>Professional grooming services to keep your dog looking and feeling their best, from bath and brush to full grooms with our experienced groomer Hayley.</p>
+                        <a href="grooming.html" class="card-link">
+                            Book a Groom
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Training Section -->
-    <section id="training" class="training">
+    <section id="training" class="bg-light">
         <div class="container">
-            <div class="split-content">
-                <div class="split-text">
-                    <span class="section-label">Training</span>
-                    <h2>Build a Better Bond</h2>
-                    <p>Our training programmes are designed to strengthen the relationship between you and your dog using kind, effective methods.</p>
+            <div class="section-header">
+                <h2>Our Training Classes</h2>
+                <p>Build a stronger bond with your dog through our expert-led, positive reinforcement training classes.</p>
+            </div>
 
-                    <ul class="feature-list">
-                        <li>
-                            <span class="check-icon"></span>
-                            <div>
-                                <strong>Puppy Classes</strong>
-                                <p>Essential socialisation and foundation skills for puppies</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="check-icon"></span>
-                            <div>
-                                <strong>Obedience Training</strong>
-                                <p>Core commands and good manners for dogs of all ages</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="check-icon"></span>
-                            <div>
-                                <strong>Behaviour Support</strong>
-                                <p>Help with reactivity, anxiety, and challenging behaviours</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="check-icon"></span>
-                            <div>
-                                <strong>1-to-1 Sessions</strong>
-                                <p>Personalised training tailored to your specific needs</p>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a href="#contact" class="btn btn-primary">Book a Session</a>
-                </div>
-                <div class="split-image training-image">
-                    <div class="image-placeholder">
-                        <span>Training Image</span>
+            <div class="grid grid-3">
+                <!-- Puppy Pre-School -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.rspcacornwall.org.uk/wp-content/uploads/2025/07/puppy-class-2.png"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/2C3263/FFFFFF?text=Puppy+Classes';"
+                             alt="Puppies in training class">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge puppy">Under 6 Months</span>
+                        <h3>Puppy Pre-School</h3>
+                        <p>The essential first step! Cover socialisation, basic commands, and problem-solving in a safe, fun environment.</p>
+                        <p><strong>From £65</strong> | 3 or 5 week courses</p>
+                        <a href="puppy-preschool.html" class="card-link">
+                            Learn More
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Grooming Section -->
-    <section id="grooming" class="grooming">
-        <div class="container">
-            <div class="split-content reverse">
-                <div class="split-text">
-                    <span class="section-label">Grooming</span>
-                    <h2>Look Good, Feel Great</h2>
-                    <p>Our professional groomers provide a calm, caring environment where every dog receives individual attention.</p>
-
-                    <ul class="feature-list">
-                        <li>
-                            <span class="check-icon"></span>
-                            <div>
-                                <strong>Full Groom</strong>
-                                <p>Bath, dry, brush, trim, nails, and ears</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="check-icon"></span>
-                            <div>
-                                <strong>Bath & Brush</strong>
-                                <p>Wash, dry, and thorough brush out</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="check-icon"></span>
-                            <div>
-                                <strong>Puppy Introduction</strong>
-                                <p>Gentle first grooming experiences for young dogs</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="check-icon"></span>
-                            <div>
-                                <strong>Nail Trimming</strong>
-                                <p>Quick nail maintenance appointments</p>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a href="#contact" class="btn btn-primary">Book a Groom</a>
+                <!-- Canine College -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.rspcacornwall.org.uk/wp-content/uploads/2025/07/Group-class-2.png"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/2C3263/FFFFFF?text=Group+Classes';"
+                             alt="Dog training group class">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge advanced">6+ Months</span>
+                        <h3>Canine College</h3>
+                        <p>For graduates of puppy class or older dogs. Refine obedience and introduce more advanced skills in a group setting.</p>
+                        <p><strong>From £65</strong> | 3 or 5 week courses</p>
+                        <a href="canine-college.html" class="card-link">
+                            Learn More
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="split-image grooming-image">
-                    <div class="image-placeholder">
-                        <span>Grooming Image</span>
+
+                <!-- 1-to-1 Training -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.rspcacornwall.org.uk/wp-content/uploads/2025/06/1-to-1-training.jpg"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/2C3263/FFFFFF?text=1-to-1+Training';"
+                             alt="Private dog training session">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge private">Personalised</span>
+                        <h3>1-to-1 Training</h3>
+                        <p>Focused, individual coaching to master specific skills. Perfect as a top-up after group classes or for dogs who need extra attention.</p>
+                        <p><strong>£50/hour</strong> | Package: £135 for 3 sessions</p>
+                        <a href="1to1-training.html" class="card-link">
+                            Learn More
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -186,73 +168,58 @@
     </section>
 
     <!-- Why Choose Us -->
-    <section class="why-us">
+    <section id="about">
         <div class="container">
-            <h2 class="section-title">Why Choose Proper Dog Cornwall?</h2>
+            <div class="split-content">
+                <div>
+                    <span class="section-label">Why Choose Us</span>
+                    <h2>Why Train With Proper Dog Cornwall?</h2>
+                    <p>Our trainers work hands-on, every single day, with rescue dogs facing a wide range of challenges. This gives us a unique depth of understanding and proven positive techniques.</p>
 
-            <div class="benefits-grid">
-                <div class="benefit">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                        </svg>
-                    </div>
-                    <h3>Supporting Animal Welfare</h3>
-                    <p>Every service you book helps fund RSPCA Cornwall's rescue and rehoming work.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            <div>
+                                <strong>100% Positive Methods</strong>
+                                <p>Force-free, reward-based training that builds confidence and is backed by science.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
+                            <div>
+                                <strong>Experienced Trainers</strong>
+                                <p>Years of real-world experience working with dogs of all backgrounds and temperaments.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                            <div>
+                                <strong>Safe, Secure Environment</strong>
+                                <p>Classes held in enclosed paddocks at our Rehoming Centre in St Columb.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
-                <div class="benefit">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                    </div>
-                    <h3>Professional Standards</h3>
-                    <p>Qualified, experienced staff using positive, modern techniques.</p>
-                </div>
-
-                <div class="benefit">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                        </svg>
-                    </div>
-                    <h3>Convenient Location</h3>
-                    <p>Based at The Venton Animal Centre, St Columb, easily accessible across Cornwall.</p>
+                <div>
+                    <img src="https://www.rspcacornwall.org.uk/wp-content/uploads/2025/03/lolly.jpeg"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/2C3263/FFFFFF?text=RSPCA+Cornwall';"
+                         alt="Trainer working with a dog"
+                         class="feature-image">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Impact Section -->
+    <section class="bg-navy text-center">
         <div class="container">
-            <div class="about-content">
-                <span class="section-label">About Us</span>
-                <h2>Part of the RSPCA Cornwall Family</h2>
-                <p>Proper Dog Cornwall is the commercial dog services brand of RSPCA Cornwall Branch. We offer professional dog training and grooming services, with all proceeds supporting the charity's vital animal welfare work.</p>
-                <p>Our team combines professional expertise with a genuine passion for animal welfare. When you choose Proper Dog Cornwall, you're not just getting quality services for your dog - you're helping rescue animals across Cornwall.</p>
-
-                <div class="about-stats">
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Proceeds to charity</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">Positive</span>
-                        <span class="stat-label">Training methods</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">Professional</span>
-                        <span class="stat-label">Qualified staff</span>
-                    </div>
-                </div>
-            </div>
+            <h2>Training With a Purpose</h2>
+            <p style="max-width: 700px; margin: 0 auto;">When you train with us, you're doing more than helping your own dog. Every pound from our classes directly funds our rescue and rehoming work, providing food, shelter, and care for Cornwall's most vulnerable animals.</p>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact">
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
@@ -267,7 +234,17 @@
                             </svg>
                             <div>
                                 <strong>Location</strong>
-                                <p>The Venton Animal Centre<br>St Columb, Cornwall</p>
+                                <p>The Venton Animal Centre<br>St Columb, Cornwall TR9 6JS</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <div>
+                                <strong>Phone</strong>
+                                <p><a href="tel:01637881455">01637 881455</a></p>
                             </div>
                         </div>
 
@@ -277,18 +254,7 @@
                             </svg>
                             <div>
                                 <strong>Email</strong>
-                                <p>info@properdogcornwall.co.uk</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
-                                <circle cx="12" cy="12" r="3.5"/>
-                            </svg>
-                            <div>
-                                <strong>Social</strong>
-                                <p>@properdogcornwall</p>
+                                <p><a href="mailto:dog.training@rspcacornwall.org.uk">dog.training@rspcacornwall.org.uk</a></p>
                             </div>
                         </div>
                     </div>
@@ -308,9 +274,10 @@
                             <label for="service">Service Interested In</label>
                             <select id="service" name="service">
                                 <option value="">Please select...</option>
-                                <option value="training">Dog Training</option>
+                                <option value="puppy">Puppy Pre-School</option>
+                                <option value="canine">Canine College</option>
+                                <option value="1to1">1-to-1 Training</option>
                                 <option value="grooming">Dog Grooming</option>
-                                <option value="both">Both</option>
                                 <option value="other">Other Enquiry</option>
                             </select>
                         </div>
@@ -338,12 +305,19 @@
                 </div>
 
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4>Training</h4>
                     <ul>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#training">Training</a></li>
-                        <li><a href="#grooming">Grooming</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="puppy-preschool.html">Puppy Pre-School</a></li>
+                        <li><a href="canine-college.html">Canine College</a></li>
+                        <li><a href="1to1-training.html">1-to-1 Training</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="grooming.html">Dog Grooming</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
 

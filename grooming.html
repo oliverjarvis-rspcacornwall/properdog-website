@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PAWS Grooming at Proper Dog Cornwall - Professional dog grooming services with experienced groomer Hayley. Full grooms from £39.">
+    <title>Dog Grooming | Proper Dog Cornwall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="proper">Proper</span><span class="dog">Dog</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#training">Training</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="puppy-preschool.html">Puppy Pre-School</a></li>
+                        <li><a href="canine-college.html">Canine College</a></li>
+                        <li><a href="1to1-training.html">1-to-1 Training</a></li>
+                    </ul>
+                </li>
+                <li><a href="grooming.html">Grooming</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact" class="btn btn-nav">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="page-hero" style="background-image: url('https://www.rspcacornwall.org.uk/wp-content/uploads/2024/03/Grooming-website-header.png');">
+        <div class="page-hero-overlay"></div>
+        <div class="container page-hero-content">
+            <span class="badge" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);">Professional Dog Grooming</span>
+            <h1>PAWS Grooming</h1>
+            <p>Expert, compassionate grooming by our experienced team. Every pamper session helps us care for Cornwall's animals in need.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                <a href="#pricing" class="btn btn-primary">View Our Services</a>
+                <a href="https://forms.gle/BP8LH227fBKoThJa8" target="_blank" rel="noopener" class="btn btn-secondary">Book Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Meet the Groomer -->
+    <section>
+        <div class="container">
+            <div class="split-content" style="align-items: center;">
+                <div>
+                    <img src="https://www.rspcacornwall.org.uk/wp-content/uploads/2025/03/Dog-groomer-Hayley.jpeg"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x800/2C3263/FFFFFF?text=Hayley';"
+                         alt="Hayley, our expert dog groomer"
+                         class="feature-image" style="max-height: 500px; object-fit: cover;">
+                </div>
+                <div>
+                    <h2>Meet Hayley, Our Expert Groomer</h2>
+                    <p>Meet Hayley, the heart and expert hands behind PAWS Grooming here at Proper Dog Cornwall. With an incredible foundation of almost 15 years dedicated service as an Animal Care Assistant within our very branch, Hayley possesses a deep understanding of dog behaviour, handling, and welfare.</p>
+                    <p>In 2024, she seamlessly blended this extensive experience with her professional grooming skills, launching our PAWS Grooming service to offer expert care you can trust.</p>
+                    <p>Hayley's genuine love for dogs and unwavering commitment to animal welfare are central to her grooming philosophy. She believes every grooming session should be a positive, comfortable experience, carefully tailoring her approach to each dog's individual needs, personality, and comfort levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing -->
+    <section class="bg-light" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Grooming Services & Pricing</h2>
+                <p>Transparent pricing for exceptional care. Prices may vary based on coat condition, size, and temperament. We're happy to advise on home care to maintain your dog's coat between grooms!</p>
+            </div>
+
+            <!-- Featured Announcement -->
+            <div style="background: linear-gradient(135deg, #f0fdf9 0%, #e8faf5 100%); border-left: 4px solid var(--pdc-teal); padding: 1.5rem; border-radius: 0 0.75rem 0.75rem 0; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h4 style="color: var(--pdc-teal); margin-bottom: 0.5rem;">New Service for Nervous Dogs!</h4>
+                <p style="margin: 0; color: var(--pdc-navy);">We're thrilled to offer a new <strong>Introductory Grooming Package</strong>. Perfect for anxious dogs or those new to grooming, helping them build confidence in a calm, one-on-one setting with Hayley. See details under "Puppy & Specialist Services" below.</p>
+            </div>
+
+            <!-- Accordion Pricing -->
+            <div class="accordion-container">
+                <!-- Small Breeds -->
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        <h3>Small Breeds</h3>
+                        <svg class="accordion-icon" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="accordion-content" style="max-height: 300px;">
+                        <div class="accordion-body">
+                            <p style="font-style: italic; color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">e.g., Chihuahua, Yorkshire Terrier, Shih Tzu, Bichon Frise, Jack Russell Terrier</p>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Full Groom:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">£39</span> - The complete pamper package! Includes bath, gentle blow dry, clipping/scissoring, nail trim, and ear clean.</li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Bath & Brush:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">£30</span> - Perfect for a freshen-up. Includes a relaxing bath, blow dry, and thorough brush-out.</li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Hand Stripping:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">From £70</span> - For certain wire-haired breeds (requires assessment).</li>
+                                <li style="margin-bottom: 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Quick Services:</strong> Nail Clip Only <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem;">£10</span> | Nail Clip & Ear Clean <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem;">£15</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medium Breeds -->
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        <h3>Medium Breeds</h3>
+                        <svg class="accordion-icon" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p style="font-style: italic; color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">e.g., Cocker/Springer Spaniel, Beagle, Border Collie, Staffie, Standard Schnauzer</p>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Full Groom:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">£45</span> - Comprehensive service including bath, blow dry, clipping/scissoring, nail trim, and ear clean.</li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Bath & Brush:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">£40</span> - Excellent maintenance to tackle shedding and keep the coat smooth.</li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Hand Stripping:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">From £70</span> - Suitable for many wire-haired medium breeds (requires assessment).</li>
+                                <li style="margin-bottom: 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Quick Services:</strong> Nail Clip Only <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem;">£10</span> | Nail Clip & Ear Clean <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem;">£15</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Large Breeds -->
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        <h3>Large Breeds</h3>
+                        <svg class="accordion-icon" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p style="font-style: italic; color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">e.g., Labrador, Golden Retriever, German Shepherd, Boxer, Setter</p>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Full Groom:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">£55</span> - Thorough session including deep-cleaning bath, blow dry, de-shedding, trimming, nail trim, and ear clean.</li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Bath & Brush:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">£45</span> - Ideal for managing shedding and keeping your large dog fresh.</li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Hand Stripping:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">From £70</span> - For some large wire-haired breeds (requires assessment).</li>
+                                <li style="margin-bottom: 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Quick Services:</strong> Nail Clip Only <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem;">£10</span> | Nail Clip & Ear Clean <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem;">£15</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra Large Breeds -->
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        <h3>Extra Large Breeds</h3>
+                        <svg class="accordion-icon" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p style="font-style: italic; color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">e.g., Newfoundland, St. Bernard, Great Dane, Leonberger, Irish Wolfhound</p>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Full Groom:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">£70</span> - The complete works for gentle giants, including bath, blow dry, extensive brush-out, trimming, nails, and ears.</li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Bath & Brush:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">£60</span> - Essential maintenance for heavy coats to manage shedding and prevent matting.</li>
+                                <li style="margin-bottom: 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Quick Services:</strong> Nail Clip Only <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem;">£10</span> | Nail Clip & Ear Clean <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem;">£15</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Puppy & Specialist Services -->
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        <h3>Puppy & Specialist Services</h3>
+                        <svg class="accordion-icon" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>FREE Puppy Introduction (Up to 3 months):</strong> A vital, positive first experience to build confidence with gentle handling and grooming noises.</li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>First Puppy Groom:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">£30</span> (Up to 6 months) - Building on the intro! Includes gentle bath, low-heat blow dry, and light trimming.</li>
+                                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>Nervous Dog & Intro to Grooming Package:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">£45</span> <span style="background: var(--pdc-teal); color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; margin-left: 0.5rem; text-transform: uppercase;">New!</span> - Perfect for anxious dogs or those new to grooming. Includes three one-on-one, 30-minute sessions with Hayley in a calm, quiet environment to build their confidence.</li>
+                                <li style="margin-bottom: 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; top: 0.5rem; width: 8px; height: 8px; background: var(--pdc-teal); border-radius: 50%;"></span><strong>De-matting:</strong> <span style="background: var(--pdc-navy); color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; margin-left: 0.25rem;">+£10</span> - Additional charge for heavily matted coats requiring extra time and care.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Info & Booking -->
+    <section>
+        <div class="container">
+            <div class="grid grid-2" style="align-items: start;">
+                <!-- Important Information -->
+                <div>
+                    <h2>Important Information</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 1.25rem; gap: 0.75rem;">
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2" style="width: 1.5rem; height: 1.5rem; stroke: var(--pdc-teal); flex-shrink: 0; margin-top: 0.15rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            <span><strong>Arrival:</strong> Please walk your dog beforehand so they can relieve themselves. Arrive promptly for your appointment time.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 1.25rem; gap: 0.75rem;">
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2" style="width: 1.5rem; height: 1.5rem; stroke: var(--pdc-teal); flex-shrink: 0; margin-top: 0.15rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            <span><strong>Flea & Vaccination Policy:</strong> Your pet must be fully up-to-date with vaccinations. Please ensure your pet is flea-free. A £10 charge will be added if fleas are found.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 1.25rem; gap: 0.75rem;">
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2" style="width: 1.5rem; height: 1.5rem; stroke: var(--pdc-teal); flex-shrink: 0; margin-top: 0.15rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            <span><strong>New Clients:</strong> A Client Consent Form must be completed before your first appointment.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2" style="width: 1.5rem; height: 1.5rem; stroke: var(--pdc-teal); flex-shrink: 0; margin-top: 0.15rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            <span><strong>Payment:</strong> We accept cash or card at the time of your appointment.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Booking Card -->
+                <div class="booking-card">
+                    <h2>Ready to Book?</h2>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: white;">Contact Us</h4>
+                        <p><strong>Phone:</strong> <a href="tel:01637881455">01637 881455</a></p>
+                        <p style="margin-top: 0.5rem;"><strong>Email:</strong> <a href="mailto:dog.grooming@rspcacornwall.org.uk">dog.grooming@rspcacornwall.org.uk</a></p>
+                    </div>
+
+                    <a href="https://forms.gle/BP8LH227fBKoThJa8" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">Book Online Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Discover Our Other Services</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <!-- Dog Training -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.rspcacornwall.org.uk/wp-content/uploads/2025/03/Puppy-class.jpeg"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/2C3263/FFFFFF?text=Training';"
+                             alt="Dog training class">
+                    </div>
+                    <div class="card-content">
+                        <h3>Dog Training Classes</h3>
+                        <p>Build a stronger bond with your dog through our expert-led, positive reinforcement training classes.</p>
+                        <a href="index.html#training" class="card-link">
+                            Learn More
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Puppy Pre-School -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.rspcacornwall.org.uk/wp-content/uploads/2025/07/puppy-class-2.png"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/2C3263/FFFFFF?text=Puppy+Classes';"
+                             alt="Puppy training">
+                    </div>
+                    <div class="card-content">
+                        <h3>Puppy Pre-School</h3>
+                        <p>Essential socialisation and foundation skills for puppies under 6 months in a safe, fun environment.</p>
+                        <a href="puppy-preschool.html" class="card-link">
+                            Learn More
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 1-to-1 Training -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.rspcacornwall.org.uk/wp-content/uploads/2025/06/1-to-1-training.jpg"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/2C3263/FFFFFF?text=1-to-1+Training';"
+                             alt="Private dog training">
+                    </div>
+                    <div class="card-content">
+                        <h3>1-to-1 Training</h3>
+                        <p>Personalised private sessions to master specific skills at your dog's pace.</p>
+                        <a href="1to1-training.html" class="card-link">
+                            Learn More
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="proper">Proper</span><span class="dog">Dog</span>
+                        <div class="cornwall">Cornwall</div>
+                    </div>
+                    <p>Professional dog training and grooming services supporting RSPCA Cornwall.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Training</h4>
+                    <ul>
+                        <li><a href="puppy-preschool.html">Puppy Pre-School</a></li>
+                        <li><a href="canine-college.html">Canine College</a></li>
+                        <li><a href="1to1-training.html">1-to-1 Training</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="grooming.html">Dog Grooming</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-charity">
+                    <h4>Supporting</h4>
+                    <p>RSPCA Cornwall Branch<br>Registered Charity</p>
+                    <p class="footer-note">All proceeds support animal welfare in Cornwall.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Proper Dog Cornwall. Part of RSPCA Cornwall Branch.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Accordion functionality
+        function toggleAccordion(button) {
+            const item = button.parentElement;
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.accordion-icon');
+
+            // Close all other accordions
+            document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.querySelector('.accordion-content').style.maxHeight = null;
+                    otherItem.querySelector('.accordion-icon').style.transform = '';
+                }
+            });
+
+            // Toggle current accordion
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.style.transform = '';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
