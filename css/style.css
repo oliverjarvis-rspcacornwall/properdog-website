@@ -1357,3 +1357,38 @@ section {
         font-size: 2rem;
     }
 }
+
+
+/* Version Toggle Button */
+.version-toggle {
+    position: fixed;
+    top: 12px;
+    right: 16px;
+    z-index: 10000;
+    background: linear-gradient(135deg, #36C1A2 0%, #2C3263 100%);
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    box-shadow: 0 4px 15px rgba(44, 50, 99, 0.3);
+    transition: all 0.3s ease;
+    letter-spacing: 0.3px;
+}
+
+.version-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(44, 50, 99, 0.4);
+    color: #fff !important;
+}
+
+@media (max-width: 768px) {
+    .version-toggle {
+        top: auto;
+        bottom: 16px;
+        right: 16px;
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
